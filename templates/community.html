@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- http://ogp.me/ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="축제를즐겨라">
+    <meta property="og:title" content="축제를즐겨라">
+    <meta property="og:description" content="🎇🎇🎇Party people🎇🎇🎇">
+    <!--    <meta property="og:image" content="img/">-->
+    <!--    <meta property="og:url" content="url">-->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <!--ICON-->
+    <script src="https://kit.fontawesome.com/ff36e7c79e.js" crossorigin="anonymous"></script>
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <!--FILE UPLOAD LIBRARY-->
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+
+    <title>축제를 들어라, 하나뿐인 인생!</title>
+
+    <style>
+        * {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+
+        body {
+            height: auto;
+            background-color: white;
+            -ms-overflow-style: none;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* HEADER */
+        header {
+            height: 200px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        header h2 {
+            font-size: 30px;
+            margin: 20px auto auto 30px;
+        }
+
+        .nav-item {
+            color: gray;
+        }
+
+        header .nav-link {
+            display: flex;
+        }
+
+        header ul li {
+            margin-right: 10px;
+            color: #767676;
+        }
+
+        header ul {
+            text-decoration: none;
+        }
+
+        header ul li {
+            list-style: none;
+            margin: 5px;
+        }
+
+        header ul li:last-child {
+            margin-right: 0;
+        }
+
+        header .nav-link a {
+            color: black;
+        }
+
+        header .nav-link a:link {
+            color: black;
+        }
+
+        header .nav-link a:hover {
+            color: #767676;
+            text-decoration: underline;
+        }
+
+        /* MAIN */
+        main {
+            display: flex;
+        }
+
+        /* SECTION */
+        section {
+            width: 95%;
+            box-sizing: border-box;
+        }
+
+        .mypic {
+            width: 100%;
+            height: 50px;
+
+            background-color: white;
+            background-position: center;
+            background-size: cover;
+
+            color: #000;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .mypic > h1 {
+            font-size: 30px;
+        }
+
+        .mybox {
+            width: 95%;
+            max-width: 700px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px lightblue;
+            margin: 20px auto;
+        }
+
+        .mybucket {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mybucket > input {
+            width: 70%;
+        }
+
+        .mybox > li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 10px;
+            min-height: 48px;
+        }
+
+        .mybox > li > h2 {
+            max-width: 75%;
+            font-size: 20px;
+            font-weight: 500;
+            margin-right: auto;
+            margin-bottom: 0px;
+        }
+
+        .mybox > li > h2.done {
+            text-decoration: line-through
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            align-content: center;
+            align-items: center;
+        }
+
+        footer .site-links {
+            display: flex;
+        }
+
+        footer .site-links li {
+            text-decoration: none;
+            list-style: none;
+            margin: 5px;
+            font-size: 12px;
+            color: #767676;
+        }
+
+        footer .site-links li:last-child {
+            margin-right: 0;
+        }
+
+        footer .site-links li a {
+            display: block;
+            color: #767676;
+        }
+
+        footer .site-links li a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function () {
+            show_bucket();
+        });
+
+        function show_bucket() {
+            $('#bucket-list').empty()
+
+            $.ajax({
+                type: "GET",
+                url: "/bucket",
+                data: {},
+                success: function (response) {
+                    rows = response["buckets"]
+
+                    for (let i = 0; i < rows.length; i++) {
+                        let bucket = rows[i]['bucket']
+                        let num = rows[i]['num']
+                        let done = rows[i]['done']
+                        let temp_html = ``
+
+                        if (done == 0) {
+                            temp_html = `<li>
+                                            <h2>✅ ${bucket}</h2>
+                                            <button onclick="done_bucket(${num})" type="button" class="btn btn-outline-primary">완료!</button>
+                                       </li>`
+                        } else {
+                            temp_html = `<li>
+                                            <h2 class="done">✅ ${bucket}</h2>
+                                            <button onclick="undo_bucket(${num})" type="button" class="btn btn-outline-danger">취소</button>
+                                        </li>`
+                        }
+
+                        $('#bucket-list').append(temp_html)
+                    }
+                }
+            });
+        }
+
+        function save_bucket() {
+
+            let bucket = $('#bucket').val()
+
+            $.ajax({
+                type: "POST",
+                url: "/bucket",
+                data: {bucket_give: bucket},
+                success: function (response) {
+                    alert(response["msg"])
+                    window.location.reload()
+                }
+            });
+        }
+
+        function delete_bucket(num) {
+
+            $.ajax({
+                type: "POST",
+                url: "/bucket/delete",
+                data: {num_give: num},
+                success: function (response) {
+                    alert(response["msg"])
+                    window.location.reload()
+                }
+            });
+        }
+
+        function done_bucket(num) {
+
+            $.ajax({
+                type: "POST",
+                url: "/bucket/done",
+                data: {num_give: num},
+                success: function (response) {
+                    alert(response["msg"])
+                }
+            });
+            window.location.reload()
+        }
+
+        function undo_bucket(num) {
+            $.ajax({
+                type: "POST",
+                url: "/bucket/undo",
+                data: {num_give: num},
+                success: function (response) {
+                    alert(response["msg"])
+                }
+            });
+            window.location.reload()
+        }
+    </script>
+</head>
+
+<body>
+<!--HEADER-->
+<header class="clearfix">
+    <div class="header-h2">
+        <h2>🎊Fㅓㄴ🎊</h2>
+    </div>
+    <nav>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/comment">Comment</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/community">Community</a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+
+<!--MAIN-->
+<main>
+    <!--SECTION-->
+    <section>
+        <div class="wrap">
+            <div class="mypic">
+                <h1>community</h1>
+            </div>
+            <div class="mybox">
+                <div class="mybucket">
+                    <input id="bucket" class="form-control" type="text" placeholder="자, 다음엔 어디로 가볼까?😆">
+                    <button onclick="save_bucket()" type="button" class="btn btn-outline-primary">기록하기</button>
+                </div>
+            </div>
+            <div class="mybox" id="bucket-list">
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!--FOOTER-->
+<footer class="footer">
+    <div class="inner clearfix float--right">
+        <hr>
+        <ul class="site-links">
+            <li>© 2022 Festival, Inc.</li>
+            <li><a href="#"><i class="fa-brands fa-facebook-square fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+        </ul>
+    </div>
+    <footer>
+</body>
+
+</html>

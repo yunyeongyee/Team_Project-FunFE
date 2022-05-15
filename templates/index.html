@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Webpage Title -->
+    <title>축제를 들어라, 하나뿐인 인생!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gamja+Flower&family=Stylish&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <!--ICON-->
+    <script src="https://kit.fontawesome.com/ff36e7c79e.js" crossorigin="anonymous"></script>
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <!--FILE UPLOAD LIBRARY-->
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <style>
+        * {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+
+        body {
+            height: auto;
+            background-color: white;
+            -ms-overflow-style: none;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* HEADER */
+        header {
+            height: 200px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        header h2 {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 20px auto auto 30px;
+        }
+
+        .nav-item {
+            color: gray;
+        }
+
+        header .nav-link {
+            display: flex;
+        }
+
+        header ul li {
+            margin-right: 10px;
+            color: #767676;
+        }
+
+        header ul {
+            text-decoration: none;
+        }
+
+        header ul li {
+            list-style: none;
+            margin: 5px;
+        }
+
+        header ul li:last-child {
+            margin-right: 0;
+        }
+
+        header .nav-link a {
+            color: black;
+        }
+
+        header .nav-link a:link {
+            color: black;
+        }
+
+        header .nav-link a:hover {
+            color: #767676;
+            text-decoration: underline;
+        }
+
+        .mypic {
+            width: 100%;
+            height: 500px;
+
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://newsroom-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2017/09/2017_%EA%B0%80%EC%9D%84%EC%B6%95%EC%A0%9C_6.jpg');
+            background-position: center 30%;
+            background-size: cover;
+
+
+            font-size: 40px;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .title {
+            color: white;
+            font-weight: 700;
+            font-size: 3rem;
+        }
+
+        .subtitle {
+            color: white;
+            font-size: 2rem;
+        }
+
+
+        /* FOOTER */
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            align-content: center;
+            align-items: center;
+        }
+
+        footer .site-links {
+            display: flex;
+        }
+
+        footer .site-links li {
+            text-decoration: none;
+            list-style: none;
+            margin: 5px;
+            font-size: 12px;
+            color: #767676;
+        }
+
+        footer .site-links li:last-child {
+            margin-right: 0;
+        }
+
+        footer .site-links li a {
+            display: block;
+            color: #767676;
+        }
+
+        footer .site-links li a:hover {
+            text-decoration: underline;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<!--HEADER-->
+<header class="clearfix">
+    <div class="header-h2">
+        <h2>🎊Fㅓㄴ🎊</h2>
+    </div>
+    <nav>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/comment">Comment</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/community">Community</a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+
+<!--MAIN TEXT-->
+<div class="mypic">
+    <h1>축제를 즐겨라🏄‍♂️</h1>
+    <p>하나뿐인 인생!!</p>
+</div>
+
+<!--FOOTER-->
+<footer class="footer">
+    <div class="inner clearfix float--right">
+        <hr>
+        <ul class="site-links">
+            <li>© 2022 Festival, Inc.</li>
+            <li><a href="#"><i class="fa-brands fa-facebook-square fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+        </ul>
+    </div>
+    </footer>
+</body>
+</html>

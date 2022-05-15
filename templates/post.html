@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- http://ogp.me/ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="축제를즐겨라">
+    <meta property="og:title" content="축제를즐겨라">
+    <meta property="og:description" content="🎇🎇🎇Party people🎇🎇🎇">
+    <!--    <meta property="og:image" content="img/">-->
+    <!--    <meta property="og:url" content="url">-->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <!--ICON-->
+    <script src="https://kit.fontawesome.com/ff36e7c79e.js" crossorigin="anonymous"></script>
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <!--FILE UPLOAD LIBRARY-->
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+
+    <title>축제를 들어라, 하나뿐인 인생!</title>
+
+    <style>
+        * {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        body {
+            height: auto;
+            background-color: white;
+            -ms-overflow-style: none;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* HEADER */
+        header {
+            height: 200px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 20px auto auto 30px;
+        }
+
+        .nav-item {
+            color: gray;
+        }
+
+        header .nav-link {
+            display: flex;
+        }
+
+        header ul li {
+            margin-right: 10px;
+            color: #767676;
+        }
+
+        header ul {
+            text-decoration: none;
+        }
+
+        header ul li {
+            list-style: none;
+            margin: 5px;
+        }
+
+        header ul li:last-child {
+            margin-right: 0;
+        }
+
+        header .nav-link a {
+            color: black;
+        }
+
+        header .nav-link a:link {
+            color: black;
+        }
+
+        header .nav-link a:hover {
+            color: #767676;
+            text-decoration: underline;
+        }
+
+        /* MAIN */
+        main {
+            display: flex;
+        }
+
+        /* SECTION */
+        section {
+            width:95%;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        .jumbotron {
+            background-color: white;
+            margin: 10px auto auto auto;
+
+            /*            box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+                        border-bottom: 1px solid rgba(0, 0, 0, .15);*/
+        }
+
+        .wrap {
+            width: 1250px;
+            margin: 10px auto auto auto;
+        }
+
+        .posting-box {
+            max-width: 1500px;
+            width: 95%;
+            margin: 10px auto auto auto;
+
+        }
+
+        .custom-file {
+            margin-bottom: 10px;
+        }
+
+        .custom-file-input {
+            background-color: transparent;
+        }
+
+        .container {
+            padding: 2px;
+
+        }
+
+        .container-h2 {
+            font-size: 25px;
+        }
+
+        #posting-btn {
+            float: right;
+        }
+
+        /* ARTICLE */
+        #cards-box {
+            flex-direction: column;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+
+        .card-columns {
+            margin: 100px 0 100px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: transparent;
+        }
+
+        .text-muted {
+            float: right;
+        }
+
+        #posting-box-hr {
+            border-top: 2px solid darkgray;
+        }
+
+        .card-text-hr {
+            border-top: 1.5px solid darkgray;
+        }
+
+        /* ASIDE */
+        /*aside {*/
+        /*    background-color: #dddddd;*/
+        /*    width: 30%;*/
+        /*    margin: 10px;*/
+        /*    padding: 10px 10px 0 0;*/
+        /*}*/
+
+        /* FOOTER */
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            align-content: center;
+            align-items: center;
+        }
+
+        footer .site-links {
+            display: flex;
+        }
+
+        footer .site-links li {
+            text-decoration: none;
+            list-style: none;
+            margin: 5px;
+            font-size: 12px;
+            color: #767676;
+        }
+
+        footer .site-links li {
+
+        }
+
+        footer .site-links li:last-child {
+            margin-right: 0;
+        }
+
+        footer .site-links li a {
+            display: block;
+            color: #767676;
+        }
+
+        footer .site-links li a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function () {
+            bsCustomFileInput.init()
+            listing()
+        })
+
+        function listing() {
+            $.ajax({
+                type: "GET",
+                url: "/diary",
+                data: {},
+                success: function (response) {
+                    let diaries = response['all_diary']
+                    for (let i = 0; i < diaries.length; i++) {
+                        let title = diaries[i]['title']
+                        let content = diaries[i]['content']
+                        let file = diaries[i]['file']
+                        let time = diaries[i]['time']
+
+                        let temp_html = `<div class="card">
+                                            <img src="../static/${file}" class="card-img-top">
+                                            <div class="card-body">
+                                                <h5 class="card-title">🎇${title}🎇</h5>
+                                                <hr class="card-text-hr">
+                                                <p class="card-text text-secondary" id="card-text-box">${content}</p>
+                                                <hr class="card-text-hr">
+                                                <p class="card-text"><small class="text-muted">${time}</small><br></p>
+                                            </div>
+                                        </div>`
+                        $('#cards-box').append(temp_html)
+                    }
+                }
+            })
+        }
+
+        function posting() {
+            let title = $('#title').val()
+            let content = $("#content").val()
+
+            let file = $('#file')[0].files[0]
+            let form_data = new FormData()
+
+            form_data.append("file_give", file)
+            form_data.append("title_give", title)
+            form_data.append("content_give", content)
+
+            $.ajax({
+                type: "POST",
+                url: "/diary",
+                data: form_data,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    alert(response["msg"])
+                    window.location.reload()
+                }
+            });
+        }
+
+    </script>
+</head>
+
+<body>
+<!--HEADER-->
+<header class="clearfix">
+    <div class="header-h2">
+        <h1>🎊Fㅓㄴ🎊</h1>
+    </div>
+    <nav>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/comment">Comment</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/community">Community</a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+
+<!--MAIN-->
+<main>
+    <!--SECTION-->
+    <section>
+        <div class="wrap">
+            <div class="jumbotron jumbotron-fluid" id="jumbotron">
+                <div class="container">
+                    <h2 class="container-h2">&nbsp;&nbsp;&nbsp; 페스티벌 후기</h2>
+                    <div class="posting-box">
+                        <hr id="posting-box-hr">
+                        <br>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="file">
+                            <label class="custom-file-label" for="file">Choose file</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="title" placeholder="title">
+                        </div>
+                        <div class="form-group">
+                    <textarea class="form-control" id="content" rows="3"
+                              placeholder="content"></textarea>
+                        </div>
+                        <button id="posting-btn" onclick="posting()" type="button" class="btn btn-dark">저장</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article>
+            <div class="card-columns" id="cards-box">
+                <div class="card">
+                    <img src="../static/월디페.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">🎇2021 WORLD DJ FESTIVAL🎇</h5>
+                        <hr class="card-text-hr">
+                        <p class="card-text text-secondary" id="card-text-box">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                            Quisquam iure minus exercitationem reprehenderit nihil omnis iusto id praesentium
+                            architecto,
+                            eius
+                            at consequuntur delectus ipsam alias. Ea, eos beatae! Vero, ex.</p>
+                        <hr class="card-text-hr">
+                        <p class="card-text"><small class="text-muted">2021-10-10</small><br></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!--ASIDE-->
+    <!--<aside><h1>aside section</h1></aside>-->
+</main>
+
+
+<!--FOOTER-->
+<footer class="footer">
+    <div class="inner clearfix float--right">
+        <hr>
+        <ul class="site-links">
+            <li>© 2022 Festival, Inc.</li>
+            <li><a href="#"><i class="fa-brands fa-facebook-square fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+        </ul>
+    </div>
+    <footer>
+</body>
+
+</html>
